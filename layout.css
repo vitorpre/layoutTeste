@@ -58,6 +58,17 @@ header
 	margin-bottom: 0px;
 	margin-top: 20px;
 	text-align: center;
+	font-family: 'Arvo', serif;
+}
+
+.menu > li
+{
+	padding: 0rem 0.5rem;
+}
+
+.menu a
+{
+	color: inherit;
 }
 
 .texto-apresentacao
@@ -100,4 +111,10 @@ header
 .card-block h3
 {
 	font-size: 20px;
+}
+
+
+.perfil-divisoria
+{
+	margin-bottom: 0.5rem;
 }
