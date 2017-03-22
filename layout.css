@@ -1,13 +1,15 @@
 h3
 {
-	font-family: "Crimson Text";
+	font-family: "Quicksand";
 	font-weight: bold;
+	color: #333;
 }
 
 p
 {
 	font-family: "Crimson Text";
-	font-size: 1.2rem;
+	font-size: 1.3rem;
+	color: #444;
 }
 
 .bgEstatico 
@@ -26,6 +28,12 @@ header
 	padding: 20px 0px !important; 
 	margin-bottom: 2rem;
 	background: url('https://images6.alphacoders.com/353/thumb-1920-353272.jpg');
+}
+
+#conteudo
+{
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
 }
 
 .cabecalho
@@ -81,6 +89,16 @@ header
 	margin-bottom: 1rem;
 }
 
+.frase-apresentacao
+{
+	font-style: italic;
+}
+
+.frase-apresentacao-autor
+{
+	text-align: right;
+	padding-right: 1.5rem; 
+}
 
 
 .rodape
@@ -117,4 +135,98 @@ header
 .perfil-divisoria
 {
 	margin-bottom: 0.5rem;
+}
+
+
+
+/* ############     Menu Lateral     ############ */
+
+.menu-lateral li
+{
+	font-size: 1.2rem;
+	padding-top: 0.25rem;
+	padding-bottom: 0.25rem;
+}
+
+.submenu-lateral 
+{
+	padding-left: 1rem;
+}
+
+.submenu-lateral li
+{
+	font-size: 1rem;
+	padding-top: 0.25rem;
+	padding-bottom: 0.25rem;
+}
+
+.menu-lateral .menu-lateral-link a
+{
+    color: #555;
+}
+
+.submenu-lateral .menu-lateral-link a
+{
+    color: #777;
+}
+
+
+.menu-lateral-link a:focus
+{
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.menu-lateral-link a:hover
+{
+    color: #444;
+    text-decoration: none;
+}
+
+
+/* ############     Conteudo Geral     ############ */
+
+.conteudo-titulo
+{
+	font-size: 1.75rem;
+	margin-bottom: 1.2rem;
+	color: #444;
+}
+
+.conteudo-subtitulo
+{
+	font-size: 1.3rem;
+	margin-bottom: 1.2rem;
+	color: #444;
+}
+
+.conteudo-lista
+{
+    font-family: "Crimson Text";
+	font-size: 1.1rem;
+	color: #444;
+}
+
+.artigo
+{
+	margin-bottom: 3rem;
+}
+
+.artigo-titulo h4
+{
+	font-size: 1.3rem;
+	color: #444;
+}
+
+/* ############     Perfil     ##############*/
+.nome-perfil
+{
+	font-size: 1.3rem;
+	margin-bottom: 0px;
+}
+
+.subtitulo-perfil
+{
+	font-size: 1.2rem;
+	font-style: italic;
 }
