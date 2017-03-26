@@ -141,6 +141,11 @@ header
 
 /* ############     Menu Lateral     ############ */
 
+.menu-lateral
+{
+	margin-bottom: 1.5rem;
+}
+
 .menu-lateral li
 {
 	font-size: 1.2rem;
@@ -218,6 +223,12 @@ header
 	color: #444;
 }
 
+.artigo-lista
+{
+	font-family: "Crimson Text";
+	font-size: 1.3rem;
+	color: #444;}
+
 /* ############     Perfil     ##############*/
 .nome-perfil
 {
@@ -229,4 +240,25 @@ header
 {
 	font-size: 1.2rem;
 	font-style: italic;
+}
+
+
+
+
+#contato-endereco-1
+{
+	background: url("imagens/endereco1.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	height: 300px; 
+}
+
+#contato-endereco-2
+{
+	background: url("imagens/endereco2.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	height: 300px; 
 }
