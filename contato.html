@@ -1,0 +1,188 @@
+<html>
+    <head>
+        <title>Psicóloga </title>
+
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta name="description" content="Psicóloga ">
+        <meta name="keywords" content="Psicologa">
+        <meta name="author" content="Vitor">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+        <script src="js/jquery-1.11.3.min.js"></script>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="assets/bootstrap-4.0.0-alpha.6-dist/css/bootstrap.css">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="assets/bootstrap-4.0.0-alpha.6-dist/js/bootstrap.min.js"></script>
+
+
+        <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+
+
+
+        <link rel="stylesheet" href="layout.css">
+
+
+
+    </head>
+
+    <body>
+        <header class="col-lg-12 cabecalho">
+            <hgroup class="col-lg-12 titulos">
+                <h1>Psicóloga TESTE</h1>
+                <h2>CRP 12345</h2>
+            </hgroup>
+            <nav>
+                <ul class="list-inline menu">
+                    <li class="list-inline-item"><a href="index.html" >Início</a></li>
+                    <li class="list-inline-item"><a href="perfil.html" >Perfil</a></li>
+                    <li class="list-inline-item"><a href="servicos.html" >Serviços</a></li>
+                    <li class="list-inline-item">Menu 4</li>
+                </ul>
+            </nav>
+
+        </header>
+       
+        
+
+        <section id="conteudo" class="container" >
+
+            <!--<div id="contato-endereco-1" style="height:500px"></div>-->
+
+            <div class="row">
+
+                <div class="col-lg-3">
+
+                    <p>Vila Romana- Rua Coriolano, 826.</p>
+                    <p>CEP: 05047-000</p>
+                    <p>Próximo ao Shopping Bourbon</p>
+
+
+                </div>
+
+<!--
+            </div>
+
+            <div class="row">
+-->
+
+                <div id="contato-endereco-1" class="col-lg-9">
+                    
+                </div>
+
+            </div>
+
+<br><br>
+
+            <div class="row">
+
+                <div class="col-lg-3">
+
+                    
+                        <p class="align-middle">Vila Romana- Rua Coriolano, 826.</p>
+                        <p class="align-middle">CEP: 05047-000</p>
+                        <p class="align-middle">Próximo ao Shopping Bourbon</p>
+
+
+                </div>
+
+                <div id="contato-endereco-2" class="col-lg-9">
+
+                </div>
+                
+                
+            </div>
+
+
+        </section>
+
+        <section class="rodape">
+            <footer class="container">
+                <div class="row">
+                    <section class="col-lg-4 col-md-4">
+                        <h3>texto 1</h3>
+                        <p>Lorem ipsum dolor</p>
+                        <p>Lorem ipsum dolor</p>
+                        <p>Lorem ipsum dolor</p>
+                    </section>
+                    <section class="col-lg-4 col-md-4">
+                        <h3>texto 2</h3>
+                        <p>Lorem ipsum dolor</p>
+                        <p>Lorem ipsum dolor</p>
+                        <p>Lorem ipsum dolor</p>
+                    </section>
+                    <section class="col-lg-4 col-md-4">
+                        <h3>texto 3</h3>
+                        <p>Lorem ipsum dolor</p>
+                        <p>Lorem ipsum dolor</p>
+                        <p>Lorem ipsum dolor</p>
+                    </section>
+                </div>
+            </footer>
+        </section>
+
+
+
+    </body>
+
+    <script>
+      function initMap() {
+        var myLatLng = {lat: -23.581944, lng: -46.641836};
+
+        // Create a map object and specify the DOM element for display.
+        var map = new google.maps.Map(document.getElementById('contato-endereco-1'), {
+          center: myLatLng,
+          zoom: 18,
+          scrollwheel: true,
+        });
+
+        // Create a marker and set its position.
+        var marker = new google.maps.Marker({
+          map: map,
+          position: myLatLng,
+          title: 'Rua Ambrosina de Macedo, 123'
+        });
+        marker.addListener('click', function() {
+            infowindow.open(map, marker);
+          });
+
+        var contentString = '<div id="content">'+
+              '<div id="siteNotice">'+
+              '</div>'+
+              '<h1 id="firstHeading" class="firstHeading">Uluru</h1>'+
+              '<div id="bodyContent">'+
+              '<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large ' +
+              'sandstone rock formation in the southern part of the '+
+              'Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) '+
+              'south west of the nearest large town, Alice Springs; 450&#160;km '+
+              '(280&#160;mi) by road. Kata Tjuta and Uluru are the two major '+
+              'features of the Uluru - Kata Tjuta National Park. Uluru is '+
+              'sacred to the Pitjantjatjara and Yankunytjatjara, the '+
+              'Aboriginal people of the area. It has many springs, waterholes, '+
+              'rock caves and ancient paintings. Uluru is listed as a World '+
+              'Heritage Site.</p>'+
+              '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
+              'https://en.wikipedia.org/w/index.php?title=Uluru</a> '+
+              '(last visited June 22, 2009).</p>'+
+              '</div>'+
+              '</div>';
+
+      var infowindow = new google.maps.InfoWindow({
+        content: contentString
+      });
+
+        infowindow.open(map, marker);
+
+  
+
+      }
+
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwq212YDqErf9hHqhFC5ft0zsH-W_E2m0&callback=initMap"
+        async defer></script>
+
+</html>
