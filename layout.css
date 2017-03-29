@@ -27,7 +27,8 @@ header
 {
 	padding: 20px 0px !important; 
 	margin-bottom: 2rem;
-	background: url('https://images6.alphacoders.com/353/thumb-1920-353272.jpg');
+	background: url('imagens/back1.jpg') center center;
+	background-size: cover;
 }
 
 #conteudo
@@ -38,8 +39,9 @@ header
 
 .cabecalho
 {
-	background-color: #3E423A;
-	color: #F4F7D9;
+	font-family: 'Libre Baskerville', serif;
+	background-color: #0b3c5d;
+	color: #0b3c5d;
 }
 
 .titulos
@@ -61,12 +63,13 @@ header
 
 .menu
 {
-	background-color: #5a677a;
+	background-color: #0b3c5d;
 	padding: 10px 0px;
 	margin-bottom: 0px;
 	margin-top: 20px;
 	text-align: center;
 	font-family: 'Arvo', serif;
+	color: white;
 }
 
 .menu > li
@@ -76,7 +79,7 @@ header
 
 .menu a
 {
-	color: inherit;
+	color: white;
 }
 
 .texto-apresentacao
@@ -105,12 +108,13 @@ header
 {
 	color: white;
 	padding: 20px 0px;
-	background-color: #5A677A;
+	background-color: #0b3c5d;
 }
 
 .rodape p
 {
 	margin: 0px;
+	color: white;
 	
 }
 
