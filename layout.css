@@ -41,19 +41,22 @@ header
 {
 	font-family: 'Libre Baskerville', serif;
 	background-color: #0b3c5d;
-	color: #0b3c5d;
+	color: #65a6cc;
 }
 
 .titulos
 {
 	text-align: center;
 	margin-bottom: 3rem;
+	text-shadow: 2px 2px #fff;
+
 }
 
 .titulos h1
 {
 	font-size: 32px;
 	font-weight: bold;
+
 }
 
 .titulos h2
@@ -63,7 +66,7 @@ header
 
 .menu
 {
-	background-color: #0b3c5d;
+	background-color: #65a6cc;
 	padding: 10px 0px;
 	margin-bottom: 0px;
 	margin-top: 20px;
@@ -108,15 +111,24 @@ header
 {
 	color: white;
 	padding: 20px 0px;
-	background-color: #0b3c5d;
+	background-color: #65a6cc;
 }
 
 .rodape p
 {
+	font-size: 1.1rem;
 	margin: 0px;
 	color: white;
 	
 }
+
+.rodape a
+{
+	color: white;
+	text-decoration: underline;	
+}
+
+
 
 .img-height
 {
@@ -265,4 +277,10 @@ header
 	background-position: center center;
 	background-size: cover;
 	height: 300px; 
+}
+
+
+#imagen-mic
+{
+	max-height: 430px;
 }
