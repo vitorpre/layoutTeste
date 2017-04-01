@@ -17,7 +17,7 @@
         <!-- Latest compiled and minified JavaScript -->
         <script src="assets/bootstrap-4.0.0-alpha.6-dist/js/bootstrap.min.js"></script>
 
-
+        <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
@@ -55,12 +55,29 @@
             <!--<div id="contato-endereco-1" style="height:500px"></div>-->
 
             <div class="row">
+                <div class="col-lg-12">
 
-                <div class="col-lg-3">
+                    <h3 class="conteudo-titulo">CONTATO</h3>
 
-                    <p>Vila Romana- Rua Coriolano, 826.</p>
-                    <p>CEP: 05047-000</p>
-                    <p>Próximo ao Shopping Bourbon</p>
+                    <ul class="conteudo-lista-contato list-unstyled">
+                        <li>Telefones: 3862-2774 / 96065-1853</li>
+                        <li>E-mail: cafsaito@gmail.com </li>
+                        <li>Acesso ao blog: <a href="http://psicologacarinesaito.blogspot.com.br/">http://psicologacarinesaito.blogspot.com.br/</a></li>
+                        <li>Acesso ao Facebook: <a href="www.facebook.com/Psicóloga-Carine">www.facebook.com/Psicóloga-Carine</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+            <div class="row">
+
+                <div class="col-lg-4">
+
+                    
+                    <p class="align-middle">Vila Romana- Rua Coriolano, 826.</p>
+                    <p class="align-middle">CEP: 05047-000</p>
+                    <p class="align-middle">Próximo ao Shopping Bourbon</p>
 
 
                 </div>
@@ -71,7 +88,7 @@
             <div class="row">
 -->
 
-                <div id="contato-endereco-1" class="col-lg-9">
+                <div id="contato-endereco-1" class="col-lg-8">
                     
                 </div>
 
@@ -81,17 +98,18 @@
 
             <div class="row">
 
-                <div class="col-lg-3">
+                <div class="col-lg-4">
 
                     
-                        <p class="align-middle">Vila Romana- Rua Coriolano, 826.</p>
-                        <p class="align-middle">CEP: 05047-000</p>
-                        <p class="align-middle">Próximo ao Shopping Bourbon</p>
+
+                    <p>Ana Rosa- Rua Ambrosina de Macedo, 123.</p>
+                    <p>CEP: 04013-030</p>
+                    <p>Próximo à estação Ana Rosa do Metrô</p>
 
 
                 </div>
 
-                <div id="contato-endereco-2" class="col-lg-9">
+                <div id="contato-endereco-2" class="col-lg-8">
 
                 </div>
                 
@@ -104,15 +122,15 @@
         <section class="rodape">
             <footer class="container">
                 <div class="row">
-                    <section class="col-lg-4 col-md-4">
+                    <section class="col-lg-4 col-md-4 text-center text-md-left rodape-coluna">
                         <p><a href="http://psicologacarinesaito.blogspot.com.br/">Acesso ao blog</a></p>
-                        <p><a href="http://www.facebook.com/Psicóloga-Carine">Acesso ao facebook</a></p>
+                        <p><a href="https://www.facebook.com/Psic%C3%B3loga-Carine-631076360433878/">Acesso ao facebook</a></p>
                     </section>
-                    <section class="col-lg-4 col-md-4 text-center">
+                    <section class="col-lg-4 col-md-4 text-center text-md-center rodape-coluna">
                         <p>Psicóloga Carine Franceschi Saito</p>
                         <p>CRP 06/98412</p>
                     </section>
-                    <section class="col-lg-4 col-md-4 text-right">
+                    <section class="col-lg-4 col-md-4 text-center text-md-right rodape-coluna">
                         <p>3862-2774 / 96065-1853</p>
                         <p>cafsaito@gmail.com</p>
                     </section>
@@ -126,50 +144,42 @@
 
     <script>
       function initMap() {
-        var myLatLng = {lat: -23.581944, lng: -46.641836};
+        var myLatLng1 = {lat: -23.525995, lng: -46.693481};
+        var myLatLng2 = {lat: -23.581964, lng: -46.641841};
 
         // Create a map object and specify the DOM element for display.
-        var map = new google.maps.Map(document.getElementById('contato-endereco-1'), {
-          center: myLatLng,
+        var map1 = new google.maps.Map(document.getElementById('contato-endereco-1'), {
+          center: myLatLng1,
           zoom: 18,
           scrollwheel: true,
         });
 
-        // Create a marker and set its position.
-        var marker = new google.maps.Marker({
-          map: map,
-          position: myLatLng,
-          title: 'Rua Ambrosina de Macedo, 123'
+        var map2 = new google.maps.Map(document.getElementById('contato-endereco-2'), {
+          center: myLatLng2,
+          zoom: 18,
+          scrollwheel: true,
         });
-        marker.addListener('click', function() {
-            infowindow.open(map, marker);
+
+
+        // Create a marker and set its position.
+        var marker1 = new google.maps.Marker({
+          map: map1,
+          position: myLatLng1,
+          title: 'Vila Romana- Rua Coriolano, 826'
+        });
+        marker1.addListener('click', function() {
+            infowindow.open(map1, marker1);
           });
 
-        var contentString = '<div id="content">'+
-              '<div id="siteNotice">'+
-              '</div>'+
-              '<h1 id="firstHeading" class="firstHeading">Uluru</h1>'+
-              '<div id="bodyContent">'+
-              '<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large ' +
-              'sandstone rock formation in the southern part of the '+
-              'Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) '+
-              'south west of the nearest large town, Alice Springs; 450&#160;km '+
-              '(280&#160;mi) by road. Kata Tjuta and Uluru are the two major '+
-              'features of the Uluru - Kata Tjuta National Park. Uluru is '+
-              'sacred to the Pitjantjatjara and Yankunytjatjara, the '+
-              'Aboriginal people of the area. It has many springs, waterholes, '+
-              'rock caves and ancient paintings. Uluru is listed as a World '+
-              'Heritage Site.</p>'+
-              '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
-              'https://en.wikipedia.org/w/index.php?title=Uluru</a> '+
-              '(last visited June 22, 2009).</p>'+
-              '</div>'+
-              '</div>';
 
-      var infowindow = new google.maps.InfoWindow({
-        content: contentString
-      });
-
+        var marker2 = new google.maps.Marker({
+          map: map2,
+          position: myLatLng2,
+          title: 'Rua Ambrosina de Macedo, 123'
+        });
+        marker2.addListener('click', function() {
+            infowindow.open(map2, marker2);
+          });
 
   
 
